@@ -4,9 +4,10 @@ project(mimick_vendor)
 find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_vendor_package REQUIRED)
 
+set(mimick_version "ros2-riscv")    
 ament_vendor(mimick_vendor
-  VCS_URL https://github.com/ros2/Mimick.git
-  VCS_VERSION 4dbd495e9f3d87a83c3201ef9d851e85f7133db7
+  VCS_URL https://github.com/guillaume-pais-siemens/Mimick.git
+  VCS_VERSION ${mimick_version}
 )
 
 ament_export_dependencies(mimick)
